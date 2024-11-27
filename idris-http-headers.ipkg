@@ -1,0 +1,19 @@
+package idris-http-headers
+version = 0.0.1
+authors = "Michael Herstine"
+license = "GPL-3.0+"
+brief = "Demonstration of dependent types with HTTP/1.1 headers"
+readme = "README.org"
+homepage = "https://github.com/sp1ff/idris-http-headers"
+bugtracker = "https://github.com/sp1ff/idris-http-headers/issues"
+
+-- packages to add to search path
+depends = refined
+-- modules to install
+modules = Header
+-- main file (i.e. file to load at REPL)
+main = Main
+-- name of executable
+executable = demo
+-- opts =
+sourcedir = "src"

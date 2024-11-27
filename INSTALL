@@ -1,0 +1,27 @@
+Installation Instructions
+*************************
+
+Basic Installation
+==================
+
+    idris-http-headers is a demonstration program; as such, it is not
+really intended for installation. That said, it does contain an Idris
+package file. I suggest you install Idris2 using ‘idris2-pack‘
+(https://github.com/stefan-hoeck/idris2-pack), which can be installed
+with the following shell command:
+
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/stefan-hoeck/idris2-pack/main/install.bash)"
+
+Once ‘pack‘ is installed, the command ‘make‘ will build the package.
+‘pack run‘ will invoke the package. ‘pack install‘ will install the
+program, should that be desired.
+
+Copyright notice
+================
+
+   Copyright © 2024 Michael <sp1ff@pobox.com>
+
+   Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.

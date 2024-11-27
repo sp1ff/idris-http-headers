@@ -1,0 +1,36 @@
+#+TITLE : README
+#+AUTHOR: Michael
+#+DESCRIPTION: README for `idris-http-headers`
+#+EMAIL: sp1ff@pobox.com
+#+DATE: <2024-11-27 Wed 07:46>
+#+AUTODATE: t
+
+* Introduction
+
+[[https://github.com/sp1ff/idris-http-headers][idris-http-headers]] is the demonstration code for my post [[https://unwoundstack.com/blog/dependent-types-and-http-headers.html][Dependent Types and the Art of HTTP Headers]]. It implements correct-by-construction types for HTTP header names & values, as well as a dependently-typed header map (as in, the return type of the lookup function depends on the value of the header name argument), along with a little demonstration program.
+* License
+
+idris-http-headers is GPL v3 software.
+* Prequisite
+
+The [[https://www.idris-lang.org/][Idris2]] programming language, which is typically installed via [[https://github.com/stefan-hoeck/idris2-pack][pack]]:
+
+#+BEGIN_SRC bash
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/stefan-hoeck/idris2-pack/main/install.bash)"
+#+END_SRC
+* Installation
+
+idris-http-headers is only available as source:
+
+#+BEGIN_SRC bash
+  git clone https://github.com/sp1ff/idris-http-headers.git
+  cd idris-http-headers
+  pack run idris-http-headers.ipkg X-Mine OK Host bree.local 名字 三三
+  Failed to parse header: 名字, 三三
+  [host: [MkHostname {host = [98, 114, 101, 101, 46, 108, 111, 99, 97, 108], port = Nothing}, MkHostname {host = [108, 111, 99, 97, 108, 104, 111, 115, 116], port = Just 8000}], x-mine: <raw header values>, x-custom: <raw header values>, content-length: [16]]
+#+END_SRC
+* Status & Roadmap
+
+Since this is demonstration code, I'm unlikely to develop it much, even if I do expand the post into a series. Perhaps I'll use it as the basis for a proper Idris HTTP library.
+
+Nevertheless-- bugs, comments, problems, PRs, feature requests &c welcome at [[mailto:sp1ff@pobox.com][sp1ff@pobox.com]] and in the [[https://github.com/sp1ff/idris-http-headers/issues][issues]].
